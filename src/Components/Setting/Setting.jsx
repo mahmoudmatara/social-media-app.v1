@@ -6,7 +6,7 @@ import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { FaSpinner, FaKey } from "react-icons/fa";
-import { AuthContext } from "../../context/AuthContext";
+import { AuthContext } from "./../../Context/AuthContext";
 const passwordSchema = z
   .object({
     password: z.string().nonempty("Current password is required"),
